@@ -10,34 +10,23 @@ TradLive provides **simultaneous AI-powered translation** with ultra-low latency
 - 💬 **Translator Mode** — bidirectional push-to-talk translation for two people
 - 🔒 **Privacy-first** — conversations are not stored, no AI training on your data, GDPR/LPD compliant (Swiss company)
 
-## 📊 Our Stack
-
-| Component | Technology | Repository |
-|-----------|-----------|-----------|
-| **Web platform** (app + API + audio hub) | Next.js 16 + React 19 + TypeScript, hosted on Railway | [TradLive-project](https://github.com/TradLive/TradLive-project) |
-| **Conference backend** (self-hosted pods) | Python + FastAPI on RunPod | [TradLive_Conference_Runpod](https://github.com/TradLive/TradLive_Conference_Runpod) |
-| **Translator backend** (self-hosted pods) | Python + FastAPI on RunPod | [TradLive_Translator_Runpod](https://github.com/TradLive/TradLive_Translator_Runpod) |
-
 ## 🤖 AI Pipelines
 
 - **Premium** — Google Gemini Live Translate (STT + translation + audio)
-- **Standard / Pro (cloud)** — Mistral Voxtral realtime STT → DeepL translation → Deepgram TTS
-- **Self-hosted pods** — open-source models:
-  - **STT** — Kyutai STT-1B (CC-BY 4.0)
-  - **Translation** — Google MADLAD-400-3B (Apache 2.0)
-  - **TTS** — Rhasspy Piper
+- **Standard / Pro** — Mistral Voxtral realtime STT (self-hosted hub) → DeepL translation → Deepgram TTS
 
 Learn more in our [Legal Documentation](https://tradlive.ch/legal).
+
+## 📊 Stack
+
+- **Web platform** — Next.js 16 + React 19 + TypeScript, hosted on Railway
+- **Realtime** — Ably
+- **Data & billing** — Turso, Upstash Redis, Stripe
 
 ## 🚀 Getting Started
 
 - 🌐 **Live:** [tradlive.ch](https://tradlive.ch)
-- 📖 **Documentation:** See individual repo READMEs
 - 💬 **Contact:** [contact@tradlive.ch](mailto:contact@tradlive.ch)
-
-## 📜 License
-
-Each repository has its own license. See individual repos for details.
 
 ---
 
